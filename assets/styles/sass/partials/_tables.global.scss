@@ -1,0 +1,57 @@
+/* 
+SEkit Global Tables	 Stylesheet
+v0.0.1
+
+Author: Lindha Boberg - http://studioelsa.se
+Copyright: (c) 2011, Studio Elsa ltd
+License: http://creativecommons.org/licenses/BSD/
+2012-06-01
+*/
+
+/*
+table		Defines a table
+th			Defines a table header
+tr			Defines a table row
+td	 		Defines a table cell
+caption 	Defines a table caption
+colgroup 	Defines groups of table columns
+col 		Defines the attribute values for one or more columns in a table
+thead	 	Defines a table head
+tbody	 	Defines a table body
+tfoot	 	Defines a table footer 
+*/
+
+
+table {
+	margin: 0 auto 0 auto;
+	width: 98%;
+	clear: both;
+	border-collapse: collapse;
+
+}
+
+
+table, 
+tr, 
+td {
+	border-collapse: collapse;	
+	vertical-align: baseline;
+}
+
+
+table caption,
+th {
+	text-align: left;
+}
+
+
+td, th {
+	padding: 0.35em;
+}
+
+.col1 {
+	text-align: right;
+	width: 15%;
+}
+
+

@@ -1,0 +1,136 @@
+/* 
+SEkit Global Form Stylesheet
+v0.0.2
+
+Author: Lindha Boberg - http://studioelsa.se
+Copyright: (c) 2012, Studio Elsa ltd
+License: http://creativecommons.org/licenses/BSD/
+2012-07-01
+*/
+
+
+
+
+form {
+    margin: 2em 0 2em 0;
+    padding: 0 0 1em 0;
+    font-size: 1em;
+    line-height: 1;
+    @include border-radius;
+    	@include border;
+    
+    	@include screen-bg;
+    	
+}
+
+fieldset {
+	
+	border: none;
+	
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	
+}
+
+legend {
+	padding-top: 2em;
+}
+
+input, 
+textarea,
+select  {
+    height: 32px;
+    width: 98%;
+    vertical-align: baseline;
+    margin-top: 0;
+    
+    @include border-radius;
+    
+   	@include border;
+    
+    padding: 2px;
+	display:block;
+    margin-bottom:15px;
+    margin-top:5px;
+    outline: none; 
+    
+    background-color: lighten($light-gray, 75%);
+    
+        
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: inset 0 0 2px rgba(255,255,255,0.75);
+    -webkit-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+label {
+	clear: both;
+}
+
+textarea {
+    height: 100px;
+}
+
+
+
+:invalid { 
+  border-color: #e88;
+  -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, .8);
+  -moz-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
+  -o-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
+  -ms-box-shadow: 0 0 5px rbba(255, 0, 0, .8);
+  box-shadow:0 0 5px rgba(255, 0, 0, .8);
+}
+
+:required {
+  border-color: $main-color;
+  -webkit-box-shadow: 0 0 5px darken($main-color, 10%);
+  -moz-box-shadow: 0 0 5px darken($main-color, 10%);
+  -o-box-shadow: 0 0 5px darken($main-color, 10%);
+  -ms-box-shadow: 0 0 5px darken($main-color, 10%);
+  box-shadow: 0 0 5px darken($main-color, 10%);
+}
+
+
+input[type=submit] {
+  background:none;
+  padding:10px;
+}
+
+.button, .button:visited {
+	background-color:$dark-gray;
+	display: inline-block;
+    padding: 8px 18px 5px 18px;
+    color: rgb(255,255,255);
+    text-decoration: none;
+    -webkit-border-radius: 6px;
+    
+    border: 1px solid #757575;
+    
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    text-shadow: 0 -1px 2px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+	text-transform: uppercase;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.button span {
+	color: rgb(255,255,255);
+	font-size: 20px;
+}
+
+.form-actions {
+	margin-left: 2em;
+}
+
+.control-group {
+	clear: both;
+	padding-top: 0.35em;
+}

@@ -1,0 +1,458 @@
+/*
+ http://studioelsa.se Public Layout Stylesheet
+v0.0.2
+
+Author: Lindha Boberg - http://studioelsa.se
+Copyright: (c) 2012, Studio Elsa ltd
+License: http://creativecommons.org/licenses/BSD/
+2012-07-01
+*/
+
+
+
+
+.binding {
+    width: 960px;    
+}
+
+body {
+	
+}
+
+a {	
+ -webkit-transition-timing-function: ease-in;           
+	-moz-transition-timing-function: ease-in; 
+	  -o-transition-timing-function: ease-in; 
+	     transition-timing-function: ease-in; 
+	
+ -webkit-transition-duration: 250ms;           
+	-moz-transition-duration: 250ms; 
+	  -o-transition-duration: 250ms; 
+	    transition-duration: 250ms;
+}
+
+
+.backgroundsize body  {
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+     
+}
+ 
+
+#header {
+	height: 125px;
+//	background-color: rgb(255,255,255);
+	text-align: center;
+	
+//	 -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.8); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+//	          box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.8); /* Opera 10.5, IE9+, Firefox 4+, Chrome 6+, iOS 5 */
+	z-index: 1050;
+}
+
+#header h1 a  {
+ -webkit-transition-duration: 250ms;           
+	-moz-transition-duration: 250ms; 
+	  -o-transition-duration: 250ms; 
+	    transition-duration: 250ms;
+}
+
+.svg #header h1 {
+	background: url(../images/header-logo.svg) no-repeat center center;
+}
+
+#header h1 {
+	background: url(../images/header-logo.png) no-repeat center center;
+}
+
+#header h1,
+#header h1 a {
+	position: relative;
+	width: 150px;
+	height: 125px;
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
+#content {
+
+}
+
+img {
+	height: auto;
+	width: 100%;
+}
+
+.page-section {
+	margin: 0;
+	padding: 80px 1.5em 0 1.5em;
+	min-height: 480px;
+	position: relative;
+	overflow: hidden;
+		
+		
+			
+//	border-bottom: 1px solid rgb(245,245,245);
+//	-webkit-box-shadow: 0 2px 1px -1px rgb(245,245,245); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+//	box-shadow: 0 2px 1px -1px rgb(245,245,245); /* Opera 10.5, IE9+, Firefox 4+, Chrome 6+, iOS */
+	
+	clear:  both;
+//	border-bottom: 1px dotted $light-gray;
+
+}
+
+
+.page-section .article-content {
+	margin-top: 1em;
+}
+
+.page-section header {
+	margin-top: 10em;
+}
+
+
+.page-section h1,
+.page-section h2 {
+	text-shadow: 0 1px 1px $white;
+}
+
+
+
+#core .article-content,
+#brandery .article-content {
+	@include border-radius;
+	
+	@include screen-bg;
+	padding-bottom: 1em;	
+ }
+ 
+
+#brandery .trio {
+	width: 28%;
+}
+
+#brandery .trio.last {
+	width: 40%;
+}
+
+#info.page-section header {
+	margin-top: 0;
+}
+
+ //icon-spite 
+.icons {
+	position: relative;
+} 
+ .icons h1 {
+ 	padding-right: 54px;
+ }
+ 
+ span.icon {
+ 	display:  inline-block;
+ 	position: absolute;
+ 	top: 1em;
+ 	right: 1em;;
+ 	height:  48px;
+ 	width: 48px;
+ 	background: url(../images/icon-sprite.png) no-repeat;
+ }
+ 
+ .svg span.icon {
+ 	background: url(../images/icon-sprite.svg) no-repeat;
+ }
+ 
+  span.icon.icon-step1 {
+ 	background-position: 0 0;
+ }
+ 
+  span.icon.icon-step2 {
+ 	background-position: -48px 0;
+ }
+ 
+ span.icon.icon-step3 {
+ 	background-position: -96px 0;
+ }
+ 
+
+.bg-01 {
+	background: url(../images/bg01.png) no-repeat center top;
+}
+
+.bg-02 {
+	background: url(../images/bg02.png) no-repeat center top;
+}
+
+.bg-03 {
+	background: url(../images/bg03.png) no-repeat center top;
+}
+
+.bg-07 {
+	background: url(../images/bg07.png) no-repeat center top;
+}
+
+.bg-08 {
+	background: url(../images/bg08.png) no-repeat center top;
+}
+
+//company sections
+
+.company header h1,
+.company header h1 a {
+	display: block;
+	position: relative;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	text-indent: -999999px;
+}
+
+.company footer {
+	bottom:  0;
+	left:0;
+	right: 0;
+	position: absolute;
+	width: 98%;
+	text-align: right;
+	padding: 1%;
+	@include screen-bg; 
+}
+
+
+.page-section.company header {
+	margin-top: 5em;
+}
+
+
+
+//flightcar
+#flightcar header h1,
+#flightcar header h1 a {
+	height: 285px;
+	width: 450px;
+}
+
+.svg #flightcar header {
+	background: url(../images/logos/flightcar.svg) no-repeat center top;
+}
+
+#flightcar header {
+	background: url(../images/logos/flightcar.png) no-repeat center top;
+}
+
+
+//ontract
+#ontract header h1,
+#ontract header h1 a {
+	height: 275px;
+	width: 384px;
+}
+
+#ontract header {
+	background: url(../images/logos/ontract.png) no-repeat center top;
+}
+
+//repp
+#repp header h1,
+#repp header h1 a {
+	height: 300px;
+	width: 275px;
+}
+
+#repp header {
+	background: url(../images/logos/repp.png) no-repeat center top;
+}
+
+
+//woowho
+#woowho header h1,
+#woowho header h1 a {
+	height: 285px;
+	width: 400px;
+}
+
+.svg #woowho header {
+	background: url(../images/logos/woowho.svg) no-repeat center top;
+}
+
+#woowho header {
+	background: url(../images/logos/woowho.png) no-repeat center top;
+}
+
+
+//modulus
+#modulus header h1,
+#modulus header h1 a {
+	height: 285px;
+	width: 490px;
+}
+
+.svg #modulus header {
+	background: url(../images/logos/modulus.svg) no-repeat center top;
+}
+
+#modulus header {
+	background: url(../images/logos/modulus.png) no-repeat center top;
+}
+
+
+//impulcity
+#impulcity header h1,
+#impulcity header h1 a {
+	height: 275px;
+	width: 490px;
+}
+
+#impulcity header {
+	background: url(../images/logos/impulcity.png) no-repeat center center;
+}
+
+//andtix
+#andtix header h1,
+#andtix header h1 a {
+	height: 300px;
+	width: 300px;
+}
+
+.svg #andtix header {
+	background: url(../images/logos/andtix.svg) no-repeat center top;
+}
+
+#andtix header {
+	background: url(../images/logos/andtix.png) no-repeat center top;
+}
+
+//socialthreader
+#socialthreader header h1,
+#socialthreader header h1 a {
+	height: 300px;
+	width: 475px;
+}
+
+.svg #socialthreader header {
+	background: url(../images/logos/socialthreader.svg) no-repeat center center;
+}
+
+#socialthreader header {
+	background: url(../images/logos/socialthreader.png) no-repeat center center;
+}
+
+
+//otp
+#otp header h1,
+#otp header h1 a {
+	height: 300px;
+	width: 475px;
+}
+
+.svg #otp header {
+	background: url(../images/logos/otp.svg) no-repeat center center;
+}
+
+#otp header {
+	background: url(../images/logos/otp.png) no-repeat center center;
+}
+
+//crowdhall
+#crowdhall header h1,
+#crowdhall header h1 a {
+	height: 300px;
+	width: 475px;
+}
+
+.svg #crowdhall header {
+	background: url(../images/logos/crowdhall.svg) no-repeat center center;
+}
+
+#crowdhall header {
+	background: url(../images/logos/crowdhall.png) no-repeat center center;
+}
+
+//socstock
+#socstock header h1,
+#socstock header h1 a {
+	height: 300px;
+	width: 475px;
+}
+
+.svg #socstock header {
+	background: url(../images/logos/socstock.svg) no-repeat center top;
+}
+
+#socstock header {
+	background: url(../images/logos/socstock.png) no-repeat center top;
+}
+
+//bubble animation
+div.bubbles {
+height: 30px;
+position: relative;
+}
+
+
+div.bubbles span.bubble.small-left {
+width: 20px;
+height: 20px;
+position: absolute;
+left: 50px;
+bottom: 500px;
+}
+
+div.bubbles span.bubble.small-right {
+width: 15px;
+height: 15px;
+position: absolute;
+right: 50px;
+bottom: 0px;
+}
+
+div.bubbles span.bubble.medium-left {
+width: 25px;
+height: 25px;
+position: absolute;
+left: 150px;
+bottom: 0px;
+}
+
+
+
+div.bubbles span.bubble {
+-webkit-border-radius: 30px;
+background: -webkit-gradient(radial, center center, 0, center center, 10, from(rgba(255,255,255,.5)), to(rgba(200,200,200,.3)));
+-webkit-animation-name: bubbleFloat;
+-webkit-animation-duration: 10s;
+-webkit-animation-iteration-count: infinite;
+border: 2px solid rgb(200,200,200);
+}
+
+div.bubbles span.glow {
+width: 100%;
+height: 100%;
+position: relative;
+display: block;
+-webkit-border-radius: 30px;
+-webkit-animation-name: redPulse;
+-webkit-animation-duration: 1s;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bubbleFloat {
+from {
+bottom: 110px; -webkit-transform: scale(.3); opacity: 0; -webkit-animation-timing-function: ease-in-out; }
+1% {
+bottom: 110px; -webkit-transform: scale(.3); opacity: 0; -webkit-animation-timing-function: ease-in-out; }
+30% {
+bottom: 110px; -webkit-transform: scale(.8); opacity: 1; -webkit-animation-timing-function: ease-in-out; }
+95% {
+bottom: 545px; -webkit-transform: scale(.3); opacity: 1; -webkit-animation-timing-function: ease-in-out; }
+99% {
+bottom: 550px; -webkit-transform: scale(3); opacity: 0; -webkit-animation-timing-function: ease-in-out; }
+to {
+bottom: 110px; -webkit-transform: scale(.9); opacity: 0; -webkit-animation-timing-function: ease-in-out; }
+}
+@-webkit-keyframes redPulse {
+from { -webkit-box-shadow: 4px 4px 3px #ccc;}
+50% { -webkit-box-shadow: 4px 4px 3px #c1c1c1; }
+to { -webkit-box-shadow: 4px 4px 3px #ccc;}
+}
+

@@ -1,0 +1,273 @@
+a,
+a:link, 
+a:visited {
+	color: $main-color;
+	text-shadow: 0 1px 1px $white;
+	text-decoration: none;
+	}
+
+a:hover, 
+a:active {
+	cursor: pointer;
+	color: darken($main-color,7%);
+	text-decoration: none;
+}
+
+nav a,
+nav a:link, 
+nav a:visited {
+	color: $white;
+	text-shadow: 0 1px 1px (darken($main-color,7%));
+}
+
+nav a:hover, 
+nav a:active {
+	cursor:  pointer;
+	color: $white;
+}
+
+footer a,
+footer a:link, 
+footer a:visited {
+	color: $dark-gray;
+//	text-shadow: 0 1px 1px (lighten($dark-gray,7%));
+	text-transform: uppercase;
+	font-size: 0.75em;
+	letter-spacing: 0.18em;
+	padding: 0 0.75em 0 0.75em;
+}
+
+footer a:hover, 
+footer a:active {
+	cursor:  pointer;
+	color: $main-color;
+//å	text-shadow: 0 1px 1px (lighten($main-color,7%));
+
+}
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* Basic Styles */
+#main-navigation {
+height: 60px;
+	width: 100%;
+	background-color: $main-color;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	         box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+	         
+	 text-align: center;
+	 border-top: 3px solid $white;
+	 border-bottom: 3px solid $white;
+ }
+
+
+nav ul {
+	padding: 0;
+	margin: -3px auto 0 auto;
+	height: 60px;
+	width: 960px;
+	background-color: $main-color;
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+         box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+     
+     border-top: 3px solid $white;
+     border-bottom: 3px solid $white;
+    }
+
+nav li {
+	display: inline;
+	float: left;
+	width: 14.25%;
+}
+
+nav a {
+	color: #fff;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 30px;
+	text-shadow: 0 0 1px rgba(0,0,0,0.8);
+}
+
+nav li a {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+nav li:last-child a {
+	border-right: 0;
+}
+nav a:hover, nav a:active {
+	background-color: darken($main-color,7%);
+	
+}
+nav a#pull {
+	display: none;
+}
+
+/*
+nav a#top {
+	position: absolute;
+	right:  10px;
+	background-color: $main-color;
+} */
+
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 600px) {
+	#content {
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	
+	.page-section {
+		margin-bottom: 0.2em;
+		
+		padding-bottom: .1em;
+		padding-top: .1em;
+				 
+	}
+	
+	nav { 
+  		height: auto;
+  	}
+  	nav ul {
+  		width: 100%;
+  		display: block;
+  		height: auto;
+  		background-color: $main-color;
+  		border-bottom: darken($main-color, 7%);
+  	}
+  	nav li {
+  		width: 50%;
+  		float: left;
+  		position: relative;
+  	}
+
+  	nav a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 25px;
+  	}
+}
+
+/*Styles for screen 515px and lower*/
+@media only screen and (max-width : 480px) {
+	
+	#main-navigation {
+		border: none;
+		height: auto;
+	}
+	
+	.inline-grid {
+		float:  none;
+		display: block;
+	}
+	
+	#content,
+	.inline-grid {
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+		overflow: hidden;
+	}
+	
+	.inline-grid  {
+		width: 100%;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	
+	
+	.page-section {
+		margin-bottom: 0.2em;
+		
+		padding-bottom: .1em;
+		padding-top: .1em;
+				 
+	}
+	
+	nav {
+		border-bottom: 0;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+	}
+	nav a#pull {
+		display: block;
+		background-color: $dark-gray;
+		width: 100%;
+		position: relative;
+	}
+	nav a#pull:after {
+		content:"";
+		background: url(../images/nav-icon.png) no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+}
+
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+
+#main-navigation {
+	border: none;
+	height: auto;
+}
+
+	.inline-grid {
+		float:  none;
+		display: block;
+	}
+	
+	#content,
+	.inline-grid {
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+		overflow: hidden;
+	}
+	
+	.inline-grid  {
+		width: 100%;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.page-section {
+		margin-bottom: 0.1em;
+		
+		padding-bottom: .05em;
+		padding-top: .05em;
+				 
+	}
+	
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	nav li a {
+		border-bottom: 1px solid darken($main-color,7%);
+	}
+}

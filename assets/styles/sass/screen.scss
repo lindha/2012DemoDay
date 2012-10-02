@@ -1,0 +1,25 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+//@import "compass/reset";
+
+@import "plugins/normalize";
+
+// http://goldengridsystem.com/
+//@import "plugins/GGS";
+
+// Combine the partials into a single screen stylesheet.
+@import "partials/base.global";
+@import "partials/wireframe.global";
+@import "partials/typography.global";
+@import "partials/forms.global";
+//@import "partials/lists.global";
+@import "partials/tables.global";
+@import "partials/grid-tpl.global";
+
+@import "partials/layout.public";
+//@import "partials/devices.global";
+
+@import "partials/navigation.global";

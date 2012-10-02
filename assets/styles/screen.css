@@ -1,0 +1,2063 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* normalize.css v1.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 21, sass/plugins/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 31, sass/plugins/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 42, sass/plugins/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+/* line 53, sass/plugins/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 68, sass/plugins/_normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+/* line 83, sass/plugins/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+/* line 91, sass/plugins/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 103, sass/plugins/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 112, sass/plugins/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+/* line 126, sass/plugins/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 131, sass/plugins/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 136, sass/plugins/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 141, sass/plugins/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 146, sass/plugins/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 151, sass/plugins/_normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+/* line 160, sass/plugins/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+/* line 169, sass/plugins/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 173, sass/plugins/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 181, sass/plugins/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+/* line 189, sass/plugins/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+/* line 199, sass/plugins/_normalize.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 210, sass/plugins/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 220, sass/plugins/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+/* line 230, sass/plugins/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+/* line 239, sass/plugins/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 248, sass/plugins/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 257, sass/plugins/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 264, sass/plugins/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 268, sass/plugins/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+/* line 283, sass/plugins/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 287, sass/plugins/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+/* line 297, sass/plugins/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+/* line 306, sass/plugins/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+/* line 320, sass/plugins/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 329, sass/plugins/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+/* line 341, sass/plugins/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+/* line 353, sass/plugins/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 361, sass/plugins/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+/* line 373, sass/plugins/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+/* line 390, sass/plugins/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 403, sass/plugins/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 420, sass/plugins/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 431, sass/plugins/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 443, sass/plugins/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 456, sass/plugins/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 469, sass/plugins/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+/* line 478, sass/plugins/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 488, sass/plugins/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 501, sass/plugins/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 
+http://studioelsa.se Global Wireframe Stylesheet
+v0.0.2
+
+Author: Lindha Boberg - http://studioelsa.se
+Copyright: (c) 2012, Studio Elsa ltd
+License: http://creativecommons.org/licenses/BSD/
+2012-07-01
+*/
+/* line 11, sass/partials/_wireframe.global.scss */
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 19, sass/partials/_wireframe.global.scss */
+#container {
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  margin-bottom: 1;
+  padding: 0;
+  text-align: left;
+}
+
+/* line 28, sass/partials/_wireframe.global.scss */
+html > body #container {
+  height: auto;
+}
+
+/* line 32, sass/partials/_wireframe.global.scss */
+#content {
+  margin: 0 auto 0 auto;
+  text-align: left;
+  clear: both;
+  padding: 0;
+  z-index: 750;
+}
+
+/* line 40, sass/partials/_wireframe.global.scss */
+.binding {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  text-align: left;
+  clear: both;
+}
+
+/* line 50, sass/partials/_wireframe.global.scss */
+.pagination {
+  clear: both;
+}
+
+/* line 54, sass/partials/_wireframe.global.scss */
+#header {
+  position: relative;
+  height: auto;
+  z-index: 1100;
+}
+
+/* line 60, sass/partials/_wireframe.global.scss */
+#header h1 a {
+  display: block;
+  text-indent: -999999px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 69, sass/partials/_wireframe.global.scss */
+#footer,
+.clear {
+  height: 4em;
+  /* match negative margin bottom on container */
+  clear: both;
+}
+
+/* line 74, sass/partials/_wireframe.global.scss */
+#footer {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: right;
+  z-index: 1;
+}
+
+/* line 85, sass/partials/_wireframe.global.scss */
+.clear-all,
+.page-section {
+  clear: both;
+}
+
+/* 
+SEkit Global Typography Stylesheet
+v0.0.2
+
+Author: Lindha Boberg - http://studioelsa.se
+Copyright: (c) 2012, Studio Elsa ltd
+License: http://creativecommons.org/licenses/BSD/
+2012-07-01
+*/
+@font-face {
+  font-family: 'FuturaBT-Bold';
+  src: url("../fonts/FuturaBT-Bold/23AE68_0_0.eot");
+  src: url("../fonts/fonts/FuturaBT-Bold/23AE68_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBT-Bold/23AE68_0_0.woff") format("woff"), url("../fonts/FuturaBT-Bold/23AE68_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'FuturaBT-Book';
+  src: url("../fonts/FuturaBT-Book/24386B_0_0.eot");
+  src: url("../fonts/FuturaBT-Book/24386B_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBT-Book/24386B_0_0.woff") format("woff"), url("../fonts/FuturaBT-Book/24386B_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'FuturaBT-Medium';
+  src: url("../fonts/FuturaBT-Medium/24388B_0_0.eot");
+  src: url("../fonts/FuturaBT-Medium/24388B_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBT-Medium/24388B_0_0.woff") format("woff"), url("../fonts/FuturaBT-Medium/24388B_0_0.ttf") format("truetype");
+}
+
+/* line 43, sass/partials/_typography.global.scss */
+.fontface body,
+.fontface input,
+.fontface textarea,
+.fontface select,
+.fontface .button {
+  font-family: 'FuturaBT-Book';
+  font-weight: normal;
+}
+
+/* line 48, sass/partials/_typography.global.scss */
+body {
+  font-family: sans;
+  color: #4d4d4f;
+}
+
+/* line 64, sass/partials/_typography.global.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt,
+legend,
+label,
+table caption,
+th,
+input.submit {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* line 84, sass/partials/_typography.global.scss */
+.fontface h1,
+.fontface h2,
+.fontface h3,
+.fontface h4,
+.fontface h5,
+.fontface h6,
+.fontface dt,
+.fontface legend,
+.fontface label,
+.fontface table caption,
+.fontface th {
+  font-family: FuturaBT-Medium;
+  font-weight: normal;
+}
+
+/* line 102, sass/partials/_typography.global.scss */
+h1 {
+  margin: 1.7em 0 0.3em 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* line 108, sass/partials/_typography.global.scss */
+.article-content h1 {
+  font-size: 1.7em;
+  margin: 0.25em 0 0.3em 0;
+}
+
+/* line 114, sass/partials/_typography.global.scss */
+h2 {
+  font-size: 1.4em;
+  margin: 1.3em 0 0.3em 0;
+}
+
+/* line 120, sass/partials/_typography.global.scss */
+h3 {
+  font-size: 1.3em;
+  margin: 1.2em 0 0.2em 0;
+}
+
+/* line 125, sass/partials/_typography.global.scss */
+h4 {
+  font-size: 1.2em;
+  margin: 1em 0 0.1em 0;
+}
+
+/* line 130, sass/partials/_typography.global.scss */
+h5 {
+  font-size: 1.2em;
+  margin: 0.9em 0 0.1em 0;
+}
+
+/* line 135, sass/partials/_typography.global.scss */
+h6 {
+  font-size: 1em;
+  margin: 0.8em 0 0.05em 0;
+}
+
+/* line 141, sass/partials/_typography.global.scss */
+legend {
+  font-size: 1.4em;
+}
+
+/*
+ label {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+
+
+dt {
+	font-size: 1.4em;
+}
+
+ul, 
+ol, 
+dl {
+	padding: 0;
+	margin: 0 0 $base-Line-Height + 0.2em;
+	line-height: 1;
+	font-size: 1em;
+}
+
+p {
+	margin: 0 0 $base-Line-Height 0;
+}
+
+p, 
+li, 
+a, 
+dd, 
+blockquote, 
+q,
+table,
+a.ui-button {
+	font-size: $base-Font-Size;
+	line-height: $base-Line-Height;
+}
+
+*/
+/* line 183, sass/partials/_typography.global.scss */
+nav {
+  font-size: 0.875em;
+  line-height: 1;
+}
+
+/*
+abbr, 
+acronym {
+	border-color: inherit;
+	cursor: help;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+}
+
+hr {
+	border: none;
+	height: 0.1em;
+	margin: 0.5em 0 1.5em 0;
+}
+*/
+/* line 205, sass/partials/_typography.global.scss */
+.fontface strong,
+.fontface b {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'FuturaBT-Bold';
+}
+
+/* line 212, sass/partials/_typography.global.scss */
+strong,
+b {
+  font-weight: bold;
+}
+
+/*
+
+address, 
+cite, 
+em, 
+i,
+q {
+	font-style: italic;
+}
+
+blockquote {	
+	padding: 0 2.5em 0 2.5em;
+	margin: 1.5em 1.5em 2.5em 1.5em;
+	font-size: $base-Font-Size + 0.1em;
+	border-left: 8px solid rgb(195,197,201);
+	line-height: $base-Line-Height + 0.2em;
+}
+
+q:before { 
+ 	content: "“ "; 
+ } 
+ 
+q:after  { 
+ 	content: " ”"; 
+ }  
+
+
+blockquote {
+	background: url(../images/al-blockquote-left.png) no-repeat 10px 0;
+}
+
+/*
+blockquote:after {
+	font-size: 3em;
+	content: " ”";
+	line-height:1;
+}
+
+*!/
+
+del {
+	text-decoration: line-through;
+}
+
+kbd, 
+code, 
+.post_view .leadin  {
+	font-family: "Courier New", Courier, mono;
+}
+
+
+.copyright {
+	font-size: $base-Font-Size - 0.2em;
+}
+
+.footer {
+	font-size: $base-Font-Size - 0.2em;;
+}
+
+/* adjustments *!/
+blockquote > p {
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+p > a, 
+p > q,
+li > p, 
+li > a, 
+li blockquote, 
+li > q, 
+li li,
+li > label, 
+li > input,
+dd > p, 
+dd > a, 
+dd blockquote, 
+dd > q, 
+dd dd,
+cite > p, 
+cite > a, 
+cite blockquote, 
+cite > q, 
+h1 > a, 
+h2 > a, 
+h2 > a, 
+h3 > a, 
+h4 > a, 
+h5 > a, 
+h6 > a,
+table > p,
+table > input {
+	font-size: 1em;
+}
+
+section h1:first-child, 
+h1 + h1, 
+h1 + h2, 
+h1 + h3, 
+h1 + h4, 
+h1 + h5, 
+h1 + h6, 
+h2 + h1, 
+h2 + h2, 
+h2 + h3, 
+h2 + h4, 
+h2 + h5, 
+h2 + h6, 
+h3 + h1, 
+h3 + h2, 
+h3 + h3, 
+h3 + h4, 
+h3 + h5, 
+h3 + h6, 
+h4 + h1, 
+h4 + h2, 
+h4 + h3, 
+h4 + h4, 
+h4 + h5, 
+h4 + h6, 
+h5 + h1, 
+h5 + h2, 
+h5 + h3, 
+h5 + h4, 
+h5 + h5, 
+h5 + h6, 
+h6 + h1, 
+h6 + h2, 
+h6 + h3, 
+h6 + h4, 
+h6 + h5, 
+h6 + h6  {
+	margin-top: 0;
+}
+
+p + ul {
+ margin-top: $base-Line-Height;
+}*/
+/*************************************************/
+/* 
+SEkit Global Form Stylesheet
+v0.0.2
+
+Author: Lindha Boberg - http://studioelsa.se
+Copyright: (c) 2012, Studio Elsa ltd
+License: http://creativecommons.org/licenses/BSD/
+2012-07-01
+*/
+/* line 14, sass/partials/_forms.global.scss */
+form {
+  margin: 2em 0 2em 0;
+  padding: 0 0 1em 0;
+  font-size: 1em;
+  line-height: 1;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #c2c4cb;
+  text-shadow: 0 0 1px white;
+  background-color: rgba(211, 213, 214, 0.2);
+  padding: 0.5em;
+}
+
+/* line 26, sass/partials/_forms.global.scss */
+fieldset {
+  border: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 36, sass/partials/_forms.global.scss */
+legend {
+  padding-top: 2em;
+}
+
+/* line 42, sass/partials/_forms.global.scss */
+input,
+textarea,
+select {
+  height: 32px;
+  width: 98%;
+  vertical-align: baseline;
+  margin-top: 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #c2c4cb;
+  text-shadow: 0 0 1px white;
+  padding: 2px;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  outline: none;
+  background-color: white;
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.75);
+}
+
+/* line 69, sass/partials/_forms.global.scss */
+label {
+  clear: both;
+}
+
+/* line 73, sass/partials/_forms.global.scss */
+textarea {
+  height: 100px;
+}
+
+/* line 79, sass/partials/_forms.global.scss */
+:invalid {
+  border-color: #e88;
+  -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 5px rbba(255, 0, 0, 0.8);
+  -o-box-shadow: 0 0 5px rbba(255, 0, 0, 0.8);
+  -ms-box-shadow: 0 0 5px rbba(255, 0, 0, 0.8);
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+}
+
+/* line 88, sass/partials/_forms.global.scss */
+:required {
+  border-color: #b5121b;
+  -webkit-box-shadow: 0 0 5px #870d14;
+  -moz-box-shadow: 0 0 5px #870d14;
+  -o-box-shadow: 0 0 5px #870d14;
+  -ms-box-shadow: 0 0 5px #870d14;
+  box-shadow: 0 0 5px #870d14;
+}
+
+/* line 98, sass/partials/_forms.global.scss */
+input[type=submit] {
+  background: none;
+  padding: 10px;
+}
+
+/* line 103, sass/partials/_forms.global.scss */
+.button, .button:visited {
+  background-color: #4d4d4f;
+  display: inline-block;
+  padding: 8px 18px 5px 18px;
+  color: white;
+  text-decoration: none;
+  -webkit-border-radius: 6px;
+  border: 1px solid #757575;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* line 124, sass/partials/_forms.global.scss */
+.button span {
+  color: white;
+  font-size: 20px;
+}
+
+/* line 129, sass/partials/_forms.global.scss */
+.form-actions {
+  margin-left: 2em;
+}
+
+/* line 133, sass/partials/_forms.global.scss */
+.control-group {
+  clear: both;
+  padding-top: 0.35em;
+}
+
+/* 
+SEkit Global Tables	 Stylesheet
+v0.0.1
+
+Author: Lindha Boberg - http://studioelsa.se
+Copyright: (c) 2011, Studio Elsa ltd
+License: http://creativecommons.org/licenses/BSD/
+2012-06-01
+*/
+/*
+table		Defines a table
+th			Defines a table header
+tr			Defines a table row
+td	 		Defines a table cell
+caption 	Defines a table caption
+colgroup 	Defines groups of table columns
+col 		Defines the attribute values for one or more columns in a table
+thead	 	Defines a table head
+tbody	 	Defines a table body
+tfoot	 	Defines a table footer 
+*/
+/* line 25, sass/partials/_tables.global.scss */
+table {
+  margin: 0 auto 0 auto;
+  width: 98%;
+  clear: both;
+  border-collapse: collapse;
+}
+
+/* line 36, sass/partials/_tables.global.scss */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  vertical-align: baseline;
+}
+
+/* line 43, sass/partials/_tables.global.scss */
+table caption,
+th {
+  text-align: left;
+}
+
+/* line 48, sass/partials/_tables.global.scss */
+td, th {
+  padding: 0.35em;
+}
+
+/* line 52, sass/partials/_tables.global.scss */
+.col1 {
+  text-align: right;
+  width: 15%;
+}
+
+/* 
+SEkit Grid Template Stylesheet
+v0.0.2
+
+Author: Lindha Boberg - http://studioelsa.se
+Copyright: (c) 2012, Studio Elsa ltd
+License: http://creativecommons.org/licenses/BSD/
+2012-07-01
+*/
+/* line 11, sass/partials/_grid-tpl.global.scss */
+.inline-grid {
+  float: left;
+  display: inline;
+  margin: 1%;
+  padding: 1%;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+/* line 25, sass/partials/_grid-tpl.global.scss */
+.inline-grid:first-child,
+.first {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* line 31, sass/partials/_grid-tpl.global.scss */
+.inline-grid:last-child,
+.last {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* line 37, sass/partials/_grid-tpl.global.scss */
+.solo-wrapper {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+/* 1 column */
+/* line 46, sass/partials/_grid-tpl.global.scss */
+.solo {
+  width: 98%;
+}
+
+/* 2 column */
+/* line 51, sass/partials/_grid-tpl.global.scss */
+.duo {
+  width: 48.5%;
+}
+
+/* 3 column */
+/* line 56, sass/partials/_grid-tpl.global.scss */
+.trio {
+  width: 32%;
+}
+
+/* 4 column */
+/* line 61, sass/partials/_grid-tpl.global.scss */
+.quartet {
+  width: 23.65%;
+}
+
+/* line 67, sass/partials/_grid-tpl.global.scss */
+.duo-trio {
+  width: 65%;
+}
+
+/*********************************************************/
+/*
+ http://studioelsa.se Public Layout Stylesheet
+v0.0.2
+
+Author: Lindha Boberg - http://studioelsa.se
+Copyright: (c) 2012, Studio Elsa ltd
+License: http://creativecommons.org/licenses/BSD/
+2012-07-01
+*/
+/* line 14, sass/partials/_layout.public.scss */
+.binding {
+  width: 960px;
+}
+
+/* line 22, sass/partials/_layout.public.scss */
+a {
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-transition-duration: 250ms;
+  -moz-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+}
+
+/* line 35, sass/partials/_layout.public.scss */
+.backgroundsize body {
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 45, sass/partials/_layout.public.scss */
+#header {
+  height: 125px;
+  text-align: center;
+  z-index: 1050;
+}
+
+/* line 55, sass/partials/_layout.public.scss */
+#header h1 a {
+  -webkit-transition-duration: 250ms;
+  -moz-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+}
+
+/* line 62, sass/partials/_layout.public.scss */
+.svg #header h1 {
+  background: url(../images/header-logo.svg) no-repeat center center;
+}
+
+/* line 66, sass/partials/_layout.public.scss */
+#header h1 {
+  background: url(../images/header-logo.png) no-repeat center center;
+}
+
+/* line 71, sass/partials/_layout.public.scss */
+#header h1,
+#header h1 a {
+  position: relative;
+  width: 150px;
+  height: 125px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+/* line 83, sass/partials/_layout.public.scss */
+img {
+  height: auto;
+  width: 100%;
+}
+
+/* line 88, sass/partials/_layout.public.scss */
+.page-section {
+  margin: 0;
+  padding: 80px 1.5em 0 1.5em;
+  min-height: 480px;
+  position: relative;
+  overflow: hidden;
+  clear: both;
+}
+
+/* line 107, sass/partials/_layout.public.scss */
+.page-section .article-content {
+  margin-top: 1em;
+}
+
+/* line 111, sass/partials/_layout.public.scss */
+.page-section header {
+  margin-top: 10em;
+}
+
+/* line 117, sass/partials/_layout.public.scss */
+.page-section h1,
+.page-section h2 {
+  text-shadow: 0 1px 1px white;
+}
+
+/* line 124, sass/partials/_layout.public.scss */
+#core .article-content,
+#brandery .article-content {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  background-color: rgba(211, 213, 214, 0.2);
+  padding: 0.5em;
+  padding-bottom: 1em;
+}
+
+/* line 132, sass/partials/_layout.public.scss */
+#brandery .trio {
+  width: 28%;
+}
+
+/* line 136, sass/partials/_layout.public.scss */
+#brandery .trio.last {
+  width: 40%;
+}
+
+/* line 140, sass/partials/_layout.public.scss */
+#info.page-section header {
+  margin-top: 0;
+}
+
+/* line 145, sass/partials/_layout.public.scss */
+.icons {
+  position: relative;
+}
+
+/* line 148, sass/partials/_layout.public.scss */
+.icons h1 {
+  padding-right: 54px;
+}
+
+/* line 152, sass/partials/_layout.public.scss */
+span.icon {
+  display: inline-block;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  height: 48px;
+  width: 48px;
+  background: url(../images/icon-sprite.png) no-repeat;
+}
+
+/* line 162, sass/partials/_layout.public.scss */
+.svg span.icon {
+  background: url(../images/icon-sprite.svg) no-repeat;
+}
+
+/* line 166, sass/partials/_layout.public.scss */
+span.icon.icon-step1 {
+  background-position: 0 0;
+}
+
+/* line 170, sass/partials/_layout.public.scss */
+span.icon.icon-step2 {
+  background-position: -48px 0;
+}
+
+/* line 174, sass/partials/_layout.public.scss */
+span.icon.icon-step3 {
+  background-position: -96px 0;
+}
+
+/* line 179, sass/partials/_layout.public.scss */
+.bg-01 {
+  background: url(../images/bg01.png) no-repeat center top;
+}
+
+/* line 183, sass/partials/_layout.public.scss */
+.bg-02 {
+  background: url(../images/bg02.png) no-repeat center top;
+}
+
+/* line 187, sass/partials/_layout.public.scss */
+.bg-03 {
+  background: url(../images/bg03.png) no-repeat center top;
+}
+
+/* line 191, sass/partials/_layout.public.scss */
+.bg-07 {
+  background: url(../images/bg07.png) no-repeat center top;
+}
+
+/* line 195, sass/partials/_layout.public.scss */
+.bg-08 {
+  background: url(../images/bg08.png) no-repeat center top;
+}
+
+/* line 202, sass/partials/_layout.public.scss */
+.company header h1,
+.company header h1 a {
+  display: block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  text-indent: -999999px;
+}
+
+/* line 210, sass/partials/_layout.public.scss */
+.company footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  width: 98%;
+  text-align: right;
+  padding: 1%;
+  background-color: rgba(211, 213, 214, 0.2);
+  padding: 0.5em;
+}
+
+/* line 222, sass/partials/_layout.public.scss */
+.page-section.company header {
+  margin-top: 5em;
+}
+
+/* line 230, sass/partials/_layout.public.scss */
+#flightcar header h1,
+#flightcar header h1 a {
+  height: 285px;
+  width: 450px;
+}
+
+/* line 235, sass/partials/_layout.public.scss */
+.svg #flightcar header {
+  background: url(../images/logos/flightcar.svg) no-repeat center top;
+}
+
+/* line 239, sass/partials/_layout.public.scss */
+#flightcar header {
+  background: url(../images/logos/flightcar.png) no-repeat center top;
+}
+
+/* line 246, sass/partials/_layout.public.scss */
+#ontract header h1,
+#ontract header h1 a {
+  height: 275px;
+  width: 384px;
+}
+
+/* line 251, sass/partials/_layout.public.scss */
+#ontract header {
+  background: url(../images/logos/ontract.png) no-repeat center top;
+}
+
+/* line 257, sass/partials/_layout.public.scss */
+#repp header h1,
+#repp header h1 a {
+  height: 300px;
+  width: 275px;
+}
+
+/* line 262, sass/partials/_layout.public.scss */
+#repp header {
+  background: url(../images/logos/repp.png) no-repeat center top;
+}
+
+/* line 269, sass/partials/_layout.public.scss */
+#woowho header h1,
+#woowho header h1 a {
+  height: 285px;
+  width: 400px;
+}
+
+/* line 274, sass/partials/_layout.public.scss */
+.svg #woowho header {
+  background: url(../images/logos/woowho.svg) no-repeat center top;
+}
+
+/* line 278, sass/partials/_layout.public.scss */
+#woowho header {
+  background: url(../images/logos/woowho.png) no-repeat center top;
+}
+
+/* line 285, sass/partials/_layout.public.scss */
+#modulus header h1,
+#modulus header h1 a {
+  height: 285px;
+  width: 490px;
+}
+
+/* line 290, sass/partials/_layout.public.scss */
+.svg #modulus header {
+  background: url(../images/logos/modulus.svg) no-repeat center top;
+}
+
+/* line 294, sass/partials/_layout.public.scss */
+#modulus header {
+  background: url(../images/logos/modulus.png) no-repeat center top;
+}
+
+/* line 301, sass/partials/_layout.public.scss */
+#impulcity header h1,
+#impulcity header h1 a {
+  height: 275px;
+  width: 490px;
+}
+
+/* line 306, sass/partials/_layout.public.scss */
+#impulcity header {
+  background: url(../images/logos/impulcity.png) no-repeat center center;
+}
+
+/* line 312, sass/partials/_layout.public.scss */
+#andtix header h1,
+#andtix header h1 a {
+  height: 300px;
+  width: 300px;
+}
+
+/* line 317, sass/partials/_layout.public.scss */
+.svg #andtix header {
+  background: url(../images/logos/andtix.svg) no-repeat center top;
+}
+
+/* line 321, sass/partials/_layout.public.scss */
+#andtix header {
+  background: url(../images/logos/andtix.png) no-repeat center top;
+}
+
+/* line 327, sass/partials/_layout.public.scss */
+#socialthreader header h1,
+#socialthreader header h1 a {
+  height: 300px;
+  width: 475px;
+}
+
+/* line 332, sass/partials/_layout.public.scss */
+.svg #socialthreader header {
+  background: url(../images/logos/socialthreader.svg) no-repeat center center;
+}
+
+/* line 336, sass/partials/_layout.public.scss */
+#socialthreader header {
+  background: url(../images/logos/socialthreader.png) no-repeat center center;
+}
+
+/* line 343, sass/partials/_layout.public.scss */
+#otp header h1,
+#otp header h1 a {
+  height: 300px;
+  width: 475px;
+}
+
+/* line 348, sass/partials/_layout.public.scss */
+.svg #otp header {
+  background: url(../images/logos/otp.svg) no-repeat center center;
+}
+
+/* line 352, sass/partials/_layout.public.scss */
+#otp header {
+  background: url(../images/logos/otp.png) no-repeat center center;
+}
+
+/* line 358, sass/partials/_layout.public.scss */
+#crowdhall header h1,
+#crowdhall header h1 a {
+  height: 300px;
+  width: 475px;
+}
+
+/* line 363, sass/partials/_layout.public.scss */
+.svg #crowdhall header {
+  background: url(../images/logos/crowdhall.svg) no-repeat center center;
+}
+
+/* line 367, sass/partials/_layout.public.scss */
+#crowdhall header {
+  background: url(../images/logos/crowdhall.png) no-repeat center center;
+}
+
+/* line 373, sass/partials/_layout.public.scss */
+#socstock header h1,
+#socstock header h1 a {
+  height: 300px;
+  width: 475px;
+}
+
+/* line 378, sass/partials/_layout.public.scss */
+.svg #socstock header {
+  background: url(../images/logos/socstock.svg) no-repeat center top;
+}
+
+/* line 382, sass/partials/_layout.public.scss */
+#socstock header {
+  background: url(../images/logos/socstock.png) no-repeat center top;
+}
+
+/* line 387, sass/partials/_layout.public.scss */
+div.bubbles {
+  height: 30px;
+  position: relative;
+}
+
+/* line 393, sass/partials/_layout.public.scss */
+div.bubbles span.bubble.small-left {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50px;
+  bottom: 500px;
+}
+
+/* line 401, sass/partials/_layout.public.scss */
+div.bubbles span.bubble.small-right {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+}
+
+/* line 409, sass/partials/_layout.public.scss */
+div.bubbles span.bubble.medium-left {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 150px;
+  bottom: 0px;
+}
+
+/* line 419, sass/partials/_layout.public.scss */
+div.bubbles span.bubble {
+  -webkit-border-radius: 30px;
+  background: -webkit-gradient(radial, center center, 0, center center, 10, from(rgba(255, 255, 255, 0.5)), to(rgba(200, 200, 200, 0.3)));
+  -webkit-animation-name: bubbleFloat;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  border: 2px solid #c8c8c8;
+}
+
+/* line 428, sass/partials/_layout.public.scss */
+div.bubbles span.glow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  -webkit-border-radius: 30px;
+  -webkit-animation-name: redPulse;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bubbleFloat {
+  /* line 440, sass/partials/_layout.public.scss */
+  from {
+    bottom: 110px;
+    -webkit-transform: scale(0.3);
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  /* line 442, sass/partials/_layout.public.scss */
+  1% {
+    bottom: 110px;
+    -webkit-transform: scale(0.3);
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  /* line 444, sass/partials/_layout.public.scss */
+  30% {
+    bottom: 110px;
+    -webkit-transform: scale(0.8);
+    opacity: 1;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  /* line 446, sass/partials/_layout.public.scss */
+  95% {
+    bottom: 545px;
+    -webkit-transform: scale(0.3);
+    opacity: 1;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  /* line 448, sass/partials/_layout.public.scss */
+  99% {
+    bottom: 550px;
+    -webkit-transform: scale(3);
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  /* line 450, sass/partials/_layout.public.scss */
+  to {
+    bottom: 110px;
+    -webkit-transform: scale(0.9);
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+}
+
+@-webkit-keyframes redPulse {
+  /* line 454, sass/partials/_layout.public.scss */
+  from {
+    -webkit-box-shadow: 4px 4px 3px #ccc;
+  }
+
+  /* line 455, sass/partials/_layout.public.scss */
+  50% {
+    -webkit-box-shadow: 4px 4px 3px #c1c1c1;
+  }
+
+  /* line 456, sass/partials/_layout.public.scss */
+  to {
+    -webkit-box-shadow: 4px 4px 3px #ccc;
+  }
+}
+
+/* line 3, sass/partials/_navigation.global.scss */
+a,
+a:link,
+a:visited {
+  color: #b5121b;
+  text-shadow: 0 1px 1px white;
+  text-decoration: none;
+}
+
+/* line 10, sass/partials/_navigation.global.scss */
+a:hover,
+a:active {
+  cursor: pointer;
+  color: #950f16;
+  text-decoration: none;
+}
+
+/* line 18, sass/partials/_navigation.global.scss */
+nav a,
+nav a:link,
+nav a:visited {
+  color: white;
+  text-shadow: 0 1px 1px #950f16;
+}
+
+/* line 24, sass/partials/_navigation.global.scss */
+nav a:hover,
+nav a:active {
+  cursor: pointer;
+  color: white;
+}
+
+/* line 31, sass/partials/_navigation.global.scss */
+footer a,
+footer a:link,
+footer a:visited {
+  color: #4d4d4f;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 0.18em;
+  padding: 0 0.75em 0 0.75em;
+}
+
+/* line 41, sass/partials/_navigation.global.scss */
+footer a:hover,
+footer a:active {
+  cursor: pointer;
+  color: #b5121b;
+}
+
+/* Clearfix */
+/* line 50, sass/partials/_navigation.global.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 54, sass/partials/_navigation.global.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 57, sass/partials/_navigation.global.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* Basic Styles */
+/* line 62, sass/partials/_navigation.global.scss */
+#main-navigation {
+  height: 60px;
+  width: 100%;
+  background-color: #b5121b;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+/* line 78, sass/partials/_navigation.global.scss */
+nav ul {
+  padding: 0;
+  margin: -3px auto 0 auto;
+  height: 60px;
+  width: 960px;
+  background-color: #b5121b;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+/* line 91, sass/partials/_navigation.global.scss */
+nav li {
+  display: inline;
+  float: left;
+  width: 14.25%;
+}
+
+/* line 97, sass/partials/_navigation.global.scss */
+nav a {
+  color: #fff;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 30px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+}
+
+/* line 107, sass/partials/_navigation.global.scss */
+nav li a {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 112, sass/partials/_navigation.global.scss */
+nav li:last-child a {
+  border-right: 0;
+}
+
+/* line 115, sass/partials/_navigation.global.scss */
+nav a:hover, nav a:active {
+  background-color: #950f16;
+}
+
+/* line 119, sass/partials/_navigation.global.scss */
+nav a#pull {
+  display: none;
+}
+
+/*
+nav a#top {
+	position: absolute;
+	right:  10px;
+	background-color: $main-color;
+} */
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 600px) {
+  /* line 132, sass/partials/_navigation.global.scss */
+  #content {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  /* line 138, sass/partials/_navigation.global.scss */
+  .page-section {
+    margin-bottom: 0.2em;
+    padding-bottom: .1em;
+    padding-top: .1em;
+  }
+
+  /* line 146, sass/partials/_navigation.global.scss */
+  nav {
+    height: auto;
+  }
+
+  /* line 149, sass/partials/_navigation.global.scss */
+  nav ul {
+    width: 100%;
+    display: block;
+    height: auto;
+    background-color: #b5121b;
+    border-bottom: #950f16;
+  }
+
+  /* line 156, sass/partials/_navigation.global.scss */
+  nav li {
+    width: 50%;
+    float: left;
+    position: relative;
+  }
+
+  /* line 162, sass/partials/_navigation.global.scss */
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+  }
+}
+/*Styles for screen 515px and lower*/
+@media only screen and (max-width: 480px) {
+  /* line 172, sass/partials/_navigation.global.scss */
+  #main-navigation {
+    border: none;
+    height: auto;
+  }
+
+  /* line 177, sass/partials/_navigation.global.scss */
+  .inline-grid {
+    float: none;
+    display: block;
+  }
+
+  /* line 183, sass/partials/_navigation.global.scss */
+  #content,
+  .inline-grid {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    overflow: hidden;
+  }
+
+  /* line 190, sass/partials/_navigation.global.scss */
+  .inline-grid {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* line 197, sass/partials/_navigation.global.scss */
+  .page-section {
+    margin-bottom: 0.2em;
+    padding-bottom: .1em;
+    padding-top: .1em;
+  }
+
+  /* line 205, sass/partials/_navigation.global.scss */
+  nav {
+    border-bottom: 0;
+  }
+
+  /* line 208, sass/partials/_navigation.global.scss */
+  nav ul {
+    display: none;
+    height: auto;
+  }
+
+  /* line 212, sass/partials/_navigation.global.scss */
+  nav a#pull {
+    display: block;
+    background-color: #4d4d4f;
+    width: 100%;
+    position: relative;
+  }
+
+  /* line 218, sass/partials/_navigation.global.scss */
+  nav a#pull:after {
+    content: "";
+    background: url(../images/nav-icon.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+}
+/*Smartphone*/
+@media only screen and (max-width: 320px) {
+  /* line 233, sass/partials/_navigation.global.scss */
+  #main-navigation {
+    border: none;
+    height: auto;
+  }
+
+  /* line 238, sass/partials/_navigation.global.scss */
+  .inline-grid {
+    float: none;
+    display: block;
+  }
+
+  /* line 244, sass/partials/_navigation.global.scss */
+  #content,
+  .inline-grid {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    overflow: hidden;
+  }
+
+  /* line 251, sass/partials/_navigation.global.scss */
+  .inline-grid {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* line 257, sass/partials/_navigation.global.scss */
+  .page-section {
+    margin-bottom: 0.1em;
+    padding-bottom: .05em;
+    padding-top: .05em;
+  }
+
+  /* line 265, sass/partials/_navigation.global.scss */
+  nav li {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  /* line 270, sass/partials/_navigation.global.scss */
+  nav li a {
+    border-bottom: 1px solid #950f16;
+  }
+}

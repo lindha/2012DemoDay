@@ -1,0 +1,356 @@
+/* 
+SEkit Global Typography Stylesheet
+v0.0.2
+
+Author: Lindha Boberg - http://studioelsa.se
+Copyright: (c) 2012, Studio Elsa ltd
+License: http://creativecommons.org/licenses/BSD/
+2012-07-01
+*/
+
+@font-face {
+	font-family: 'FuturaBT-Bold';
+	src: url('../fonts/FuturaBT-Bold/23AE68_0_0.eot');
+	src: url('../fonts/fonts/FuturaBT-Bold/23AE68_0_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/FuturaBT-Bold/23AE68_0_0.woff') format('woff'),
+	url('../fonts/FuturaBT-Bold/23AE68_0_0.ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family: 'FuturaBT-Book';
+	src: url('../fonts/FuturaBT-Book/24386B_0_0.eot');
+	src: url('../fonts/FuturaBT-Book/24386B_0_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/FuturaBT-Book/24386B_0_0.woff') format('woff'),
+	url('../fonts/FuturaBT-Book/24386B_0_0.ttf') format('truetype');
+	}
+	
+@font-face {
+	font-family: 'FuturaBT-Medium';
+	src: url('../fonts/FuturaBT-Medium/24388B_0_0.eot');
+	src: url('../fonts/FuturaBT-Medium/24388B_0_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/FuturaBT-Medium/24388B_0_0.woff') format('woff'),
+	url('../fonts/FuturaBT-Medium/24388B_0_0.ttf') format('truetype');
+	}
+
+
+
+
+.fontface body,
+.fontface input, 
+.fontface textarea,
+.fontface select,
+.fontface .button {
+	font-family: 'FuturaBT-Book';
+	font-weight: normal;
+}
+
+body {
+	font-family: sans;
+	color: $dark-gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt,
+legend,
+label,
+table caption,
+th,
+input.submit {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+
+
+.fontface h1,
+.fontface h2,
+.fontface h3,
+.fontface h4,
+.fontface h5,
+.fontface h6,
+.fontface dt,
+.fontface legend,
+.fontface label,
+.fontface table caption,
+.fontface th {
+	font-family: FuturaBT-Medium;
+	font-weight: normal;
+	
+}
+
+//.fontface nav {
+//	font-family: dinotRegular;
+//	font-weight: normal;
+//}
+
+
+	h1,
+	h2,
+	p {
+	//	max-width: 44em;
+	}
+
+h1 {
+	margin: 1.7em 0 0.3em 0;
+	font-size: 2em;	
+	font-weight: bold;
+} 
+
+.article-content h1 {
+	font-size: 1.7em;
+	margin: 0.25em 0 0.3em 0;
+}
+
+
+h2 {
+	font-size: 1.4em;
+	margin: 1.3em 0 0.3em 0;
+}
+
+
+h3 {
+	font-size: 1.3em;
+	margin: 1.2em 0 0.2em 0;
+}
+
+h4 {
+	font-size: 1.2em;
+	margin: 1em 0 0.1em 0;
+}
+
+h5 {
+	font-size: 1.2em;
+	margin: 0.9em 0 0.1em 0;
+}
+
+h6 {
+	font-size: 1em;
+	margin: 0.8em 0 0.05em 0;
+}
+
+
+legend {
+	font-size: 1.4em;
+} 
+/*
+ label {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+
+
+dt {
+	font-size: 1.4em;
+}
+
+ul, 
+ol, 
+dl {
+	padding: 0;
+	margin: 0 0 $base-Line-Height + 0.2em;
+	line-height: 1;
+	font-size: 1em;
+}
+
+p {
+	margin: 0 0 $base-Line-Height 0;
+}
+
+p, 
+li, 
+a, 
+dd, 
+blockquote, 
+q,
+table,
+a.ui-button {
+	font-size: $base-Font-Size;
+	line-height: $base-Line-Height;
+}
+
+*/
+
+nav {
+	font-size: 0.875em;
+	line-height: 1;
+}
+
+/*
+abbr, 
+acronym {
+	border-color: inherit;
+	cursor: help;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+}
+
+hr {
+	border: none;
+	height: 0.1em;
+	margin: 0.5em 0 1.5em 0;
+}
+*/
+
+.fontface strong, 
+.fontface b  {
+	font-weight: normal;
+	font-style: normal;
+	font-family:  'FuturaBT-Bold';
+}
+
+strong, 
+b  {
+	font-weight: bold;
+}
+
+/*
+
+address, 
+cite, 
+em, 
+i,
+q {
+	font-style: italic;
+}
+
+blockquote {	
+	padding: 0 2.5em 0 2.5em;
+	margin: 1.5em 1.5em 2.5em 1.5em;
+	font-size: $base-Font-Size + 0.1em;
+	border-left: 8px solid rgb(195,197,201);
+	line-height: $base-Line-Height + 0.2em;
+}
+
+q:before { 
+ 	content: "“ "; 
+ } 
+ 
+q:after  { 
+ 	content: " ”"; 
+ }  
+
+
+blockquote {
+	background: url(../images/al-blockquote-left.png) no-repeat 10px 0;
+}
+
+/*
+blockquote:after {
+	font-size: 3em;
+	content: " ”";
+	line-height:1;
+}
+
+*!/
+
+del {
+	text-decoration: line-through;
+}
+
+kbd, 
+code, 
+.post_view .leadin  {
+	font-family: "Courier New", Courier, mono;
+}
+
+
+.copyright {
+	font-size: $base-Font-Size - 0.2em;
+}
+
+.footer {
+	font-size: $base-Font-Size - 0.2em;;
+}
+
+/* adjustments *!/
+blockquote > p {
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+p > a, 
+p > q,
+li > p, 
+li > a, 
+li blockquote, 
+li > q, 
+li li,
+li > label, 
+li > input,
+dd > p, 
+dd > a, 
+dd blockquote, 
+dd > q, 
+dd dd,
+cite > p, 
+cite > a, 
+cite blockquote, 
+cite > q, 
+h1 > a, 
+h2 > a, 
+h2 > a, 
+h3 > a, 
+h4 > a, 
+h5 > a, 
+h6 > a,
+table > p,
+table > input {
+	font-size: 1em;
+}
+
+section h1:first-child, 
+h1 + h1, 
+h1 + h2, 
+h1 + h3, 
+h1 + h4, 
+h1 + h5, 
+h1 + h6, 
+h2 + h1, 
+h2 + h2, 
+h2 + h3, 
+h2 + h4, 
+h2 + h5, 
+h2 + h6, 
+h3 + h1, 
+h3 + h2, 
+h3 + h3, 
+h3 + h4, 
+h3 + h5, 
+h3 + h6, 
+h4 + h1, 
+h4 + h2, 
+h4 + h3, 
+h4 + h4, 
+h4 + h5, 
+h4 + h6, 
+h5 + h1, 
+h5 + h2, 
+h5 + h3, 
+h5 + h4, 
+h5 + h5, 
+h5 + h6, 
+h6 + h1, 
+h6 + h2, 
+h6 + h3, 
+h6 + h4, 
+h6 + h5, 
+h6 + h6  {
+	margin-top: 0;
+}
+
+p + ul {
+ margin-top: $base-Line-Height;
+}*/
+
+/*************************************************/

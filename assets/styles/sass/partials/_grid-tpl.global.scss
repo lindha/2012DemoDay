@@ -1,0 +1,73 @@
+/* 
+SEkit Grid Template Stylesheet
+v0.0.2
+
+Author: Lindha Boberg - http://studioelsa.se
+Copyright: (c) 2012, Studio Elsa ltd
+License: http://creativecommons.org/licenses/BSD/
+2012-07-01
+*/
+
+.inline-grid {
+	float: left;
+	display: inline;
+	margin: 1%;
+	padding: 1%;
+	overflow: hidden;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;    
+}
+
+
+.inline-grid:first-child, 
+.first  {
+ 	margin-left: 0 !important;
+ 	padding-left: 0 !important;
+} 
+
+.inline-grid:last-child, 
+.last {
+ 	margin-right: 0 !important;
+ 	padding-right: 0 !important;
+}
+
+
+.solo-wrapper {
+	width: 100%;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box; 
+}
+
+/* 1 column */
+.solo {
+	width:  98%;
+}
+
+/* 2 column */
+.duo {
+	width: 48.5%;
+}
+
+/* 3 column */
+.trio {
+	width: 32%;
+}
+
+/* 4 column */
+.quartet {
+	width: 23.65%;
+	
+}
+
+
+.duo-trio {
+	width: 65%; 
+}
+
+/*********************************************************/
+
+
