@@ -1320,6 +1320,7 @@ img {
   min-height: 480px;
   position: relative;
   overflow: hidden;
+  border-bottom: 1px solid whitesmoke;
   clear: both;
 }
 
